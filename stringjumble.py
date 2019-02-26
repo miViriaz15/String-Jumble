@@ -1,7 +1,8 @@
 """
 stringjumble.py
-Author: <your name>
-Credit: <sources>
+Author: miviriaz15
+Credit: https://dbader.org/blog/python-reverse-list 
+https://www.tutorialspoint.com/python/string_split.htm 
 
 Assignment:
 
@@ -25,3 +26,25 @@ ydnah dnif yam uoy taht skcirt ro seuqinhcet wef a era erehT
 handy find may you that tricks or techniques few a are There
 erehT era a wef seuqinhcet ro skcirt taht uoy yam dnif ydnah
 """
+words=str(input("Please enter a string of text (the bigger the better): "))
+print("You entered " + '"' + words + '"' + ". Now jumble it:")
+
+newwords=list(words)
+newwords.reverse()
+
+new="".join(newwords)
+print(new)
+
+second=words.split(" ")
+
+second.reverse()
+newer=" ".join(second)
+print(newer)
+
+newest=new.split(" ")
+newest.reverse()
+newestest=" ".join(newest)
+print(newestest)
+
+
+
